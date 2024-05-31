@@ -1,95 +1,192 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-header{
-    background-color:green;
+header {
+    background-color: green;
     padding: 1px;
     color: #fff;
-    
-
-    h2{
-        font-size: 24px;
-        margin-left: 5px;
-    }
-
 }
 
-.inicio{
+header h2 {
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+.inicio {
     margin-top: 5%;
     margin-bottom: 5%;
     text-align: center;
-
-    h1{
-        font-size: 70px;
-    }
-    p{
-        font-size: 24px;
-        margin: 0 15% 0 15%
-    }
 }
 
-.principal{
+.inicio h1 {
+    font-size: 70px;
+}
+
+.inicio p {
+    font-size: 24px;
+    margin: 0 15% 0 15%;
+}
+
+.principal {
     display: flex;
     width: 100%;
 }
 
-.libros{
+.libros {
     display: flex;
     width: 70%;
 }
 
-details{
-
+details {
     display: flex;
     padding: 5%;
-
-    summary{
-        
-        list-style: none;
-        padding: 5px;
-        margin: 16px;
-        position: relative;
-        }
-    
-    h2{
-        font-size: 24px;
-    }
-    p{
-        font-size: 18px;
-    }
 }
 
-div{
+details summary {
+    list-style: none;
+    padding: 5px;
+    margin: 16px;
+    position: relative;
+}
+
+details h2 {
+    font-size: 24px;
+}
+
+details p {
+    font-size: 18px;
+}
+
+div {
     width: 70%;
     display: flex;
-    
-    img{
-        width: 40%;
-        padding: 5%;
-    }
 }
 
-.lib{
+div img {
+    width: 40%;
+    padding: 5%;
+}
+
+.lib {
     width: 40%;
 }
 
-.ventas{
+.ventas {
     width: 30%;
+}
 
-    p{
-        background-color: green;
-        padding: 1.5%;
-        color: white;
-        margin-right: 20%;
+.ventas p {
+    background-color: green;
+    padding: 1.5%;
+    color: white;
+    margin-right: 20%;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .inicio h1 {
+        font-size: 50px;
+    }
+
+    .inicio p {
+        font-size: 20px;
+        margin: 0 10% 0 10%;
+    }
+
+    .principal {
+        flex-direction: column;
+    }
+
+    .libros, .ventas {
+        width: 100%;
+    }
+
+    .ventas p {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header h2 {
+        font-size: 20px;
+    }
+
+    .inicio h1 {
+        font-size: 40px;
+    }
+
+    .inicio p {
+        font-size: 18px;
+        margin: 0 5% 0 5%;
+    }
+
+    details {
+        flex-direction: column;
+        padding: 2%;
+    }
+
+    details h2 {
+        font-size: 20px;
+    }
+
+    details p {
+        font-size: 16px;
+    }
+
+    div {
+        flex-direction: column;
+    }
+
+    div img {
+        width: 80%;
+        padding: 2%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h2 {
+        font-size: 16px;
+    }
+
+    .inicio h1 {
+        font-size: 30px;
+    }
+
+    .inicio p {
+        font-size: 16px;
+        margin: 0 2% 0 2%;
+    }
+
+    details summary {
+        padding: 2px;
+        margin: 8px;
+    }
+
+    details h2 {
+        font-size: 18px;
+    }
+
+    details p {
+        font-size: 14px;
+    }
+
+    div img {
+        width: 100%;
+        padding: 1%;
+    }
+
+    .ventas p {
+        padding: 1%;
+        margin-right: 0;
     }
 }
