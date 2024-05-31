@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:rgb(50, 97, 112);
+    padding: 1px;
+    color: #fff;
+    
+
+    h2{
+        font-size: 24px;
+        margin-left: 5px;
+    }
+
+}
+
+.inicio{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+
+    h1{
+        font-size: 70px;
+    }
+    p{
+        font-size: 24px;
+        margin: 0 15% 0 15%
+    }
+}
+
+.libros{
+    display: flex;
+}
+
+details{
+
+    display: flex;
+
+    summary{
+        list-style: none;
+        padding: 5px;
+        }
+    
+}
