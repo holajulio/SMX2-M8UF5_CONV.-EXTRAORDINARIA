@@ -26,167 +26,126 @@ header h2 {
     margin-top: 5%;
     margin-bottom: 5%;
     text-align: center;
-}
-
-.inicio h1 {
+    
+    h1 {
     font-size: 70px;
-}
+    }
 
-.inicio p {
+    p {
     font-size: 24px;
     margin: 0 15% 0 15%;
+    }
+}
+
+.cuerpo{
+    display: flex;
 }
 
 .principal {
+    width: 64%;
+    margin-right: 2%;
+}
+
+nav{
+    border-bottom: 2px solid orange
+}
+
+nav li{
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 15px 20px;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+nav li:hover{
+    color: white;
+    background-color: orange;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.texto{
+    margin-left: 1%;
+    font-size: 20px;
+}
+
+.lib img{
+    padding: 3%;
+    width: 23%;
+}
+
+.eb{
+    padding: 3%;
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
-.libros {
-    display: flex;
-    width: 70%;
-}
+.bloque{
+    width: 33%;
+    text-align: center;
+    align-items: center;
 
-details {
-    display: flex;
-    padding: 5%;
-}
-
-details summary {
-    list-style: none;
-    padding: 5px;
-    margin: 16px;
-    position: relative;
-}
-
-details h2 {
-    font-size: 24px;
-}
-
-details p {
-    font-size: 18px;
-}
-
-div {
-    width: 70%;
-    display: flex;
-}
-
-div img {
-    width: 40%;
-    padding: 5%;
-}
-
-.lib {
-    width: 40%;
+    img{
+        width: 75%;
+    }
 }
 
 .ventas {
-    width: 30%;
+    width: 34%;
 }
 
-.ventas p {
+.vent-top{
+    margin: 0 3% 2% 0;
+}
+
+.vent-top p {
     background-color: green;
     padding: 1.5%;
     color: white;
     margin-right: 20%;
 }
 
-/* Media Queries */
-@media (max-width: 1200px) {
-    .inicio h1 {
-        font-size: 50px;
+@media screen and (max-width: 700px) {
+
+    .inicio{
+        margin: 0 1% 0 1%;
     }
 
-    .inicio p {
-        font-size: 20px;
-        margin: 0 10% 0 10%;
+    .cuerpo{
+        width: 100%;
+        display: block;
     }
 
-    .principal {
-        flex-direction: column;
+    .principal{
+        width: 100%;
+        
     }
 
-    .libros, .ventas {
+    nav{
         width: 100%;
     }
 
-    .ventas p {
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    header h2 {
-        font-size: 20px;
+    li{
+        width: 100%;
+        align-items: center;
     }
 
-    .inicio h1 {
-        font-size: 40px;
+    .bloque{
+        width: 100%;
+        margin: 2%;
     }
 
-    .inicio p {
-        font-size: 18px;
-        margin: 0 5% 0 5%;
-    }
-
-    details {
-        flex-direction: column;
-        padding: 2%;
-    }
-
-    details h2 {
-        font-size: 20px;
-    }
-
-    details p {
-        font-size: 16px;
-    }
-
-    div {
-        flex-direction: column;
-    }
-
-    div img {
-        width: 80%;
-        padding: 2%;
-    }
-}
-
-@media (max-width: 480px) {
-    header h2 {
-        font-size: 16px;
-    }
-
-    .inicio h1 {
-        font-size: 30px;
-    }
-
-    .inicio p {
-        font-size: 16px;
+    .texto{
         margin: 0 2% 0 2%;
     }
 
-    details summary {
-        padding: 2px;
-        margin: 8px;
-    }
-
-    details h2 {
-        font-size: 18px;
-    }
-
-    details p {
-        font-size: 14px;
-    }
-
-    div img {
+    .ventas{
         width: 100%;
-        padding: 1%;
     }
 
-    .ventas p {
-        padding: 1%;
-        margin-right: 0;
-    }
 }
